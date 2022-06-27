@@ -1,0 +1,12 @@
+
+.details img{
+width: 500px;
+}
+
+.details{
+    text-align: center;
+    background-color: white;
+  border-radius: 6px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
