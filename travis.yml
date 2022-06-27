@@ -1,12 +1,15 @@
 language: node_js
 node_js:
  - "11.6.0"
+ cache: npm
  install:
  npm ci
 branches:
   only:
- 
   - main
+  script:
+  - npm test
+  - npm run build
 deploy:
   - provider: elasticbeanstalk
     access_key_id: ${AWS_ACCESS_KEY_ID}
